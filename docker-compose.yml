@@ -11,7 +11,7 @@ volumes:
 services:
   app:
     build:
-      context: ./compose/php
+      context: ./compose/8.2
       dockerfile: Dockerfile
     container_name: "${DOCKER_PREFIX_NAME}-app"
     ports:
