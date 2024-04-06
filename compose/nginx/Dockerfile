@@ -1,5 +1,5 @@
 # Use a specific version of nginx
-FROM nginx:stable-alpine
+FROM nginx:1.20-alpine
 
 # Set UID and GID as environment variables
 ARG UID
