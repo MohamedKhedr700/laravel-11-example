@@ -14,7 +14,7 @@ RUN addgroup -g ${GID} --system laravel \
 RUN sed -i "s/user  nginx/user laravel/g" /etc/nginx/nginx.conf
 
 # Copy nginx configuration file
-COPY ./rootfs/etc/nginx/conf.d/default.conf /etc/nginx/conf.d/
+COPY rootfs/etc/nginx/default.conf /etc/nginx/conf.d/
 
 # Create directory for web content
 RUN mkdir -p /var/www/html
